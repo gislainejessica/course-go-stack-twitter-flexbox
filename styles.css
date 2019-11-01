@@ -6,11 +6,26 @@ html,body, #app{
 #app{
   display: flex;
   flex-direction: row;
+
+  align-items:  center;
+  justify-content:  center;
+  align-content: flex-start;
 }
 
 .box {
-  width: 60px;
-  height: 60px;
-  background: #f00;
+  width: 30px;
+  height: 30px;
   margin: 5px;
+}
+.red{
+  background: #f00;
+  order: 2;
+}
+.green{
+  background: #0f0;
+  order: 1;
+}
+.blue{
+  background: #00f;
+  order: 0;
 }
