@@ -1,118 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title> Twitter Jéssica </title>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Twitter Jéssica </title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
 
-  <link rel="stylesheet" href="styles.css">
+  <body>
+    <header id="main-header"> 
+      <div class="content">
+        <nav>
+          <ul>
+            <li> <img src="./images/home.svg" alt="home"> Home </li>
+            <li> <img src="./images/notification.svg" alt="notification"> Notification </li>
+            <li> <img src="./images/message.svg" alt="message"> Messages </li>
+          </ul>
+        </nav>
+        <img src="./images/logo.svg" alt="logo">
+        <div class="side">
+          <input type="text" placeholder="Seach on Twitter">
+          <img src="./images/avatar.png" alt="avatar">
+          <button> Tweet </button>
+        </div>
+      </div>
+    </header>
 
-</head>
-<body>
-  <header id="main-header"> 
-    <div class="content">
-      <nav>
+    <div class="banner"> 
+      <h1>Twitter da Gislaine Jéssica </h1>
+    </div>
+    
+    <div class="bar">
+      <div class="content">
         <ul>
-          <li> <img src="./images/home.svg" alt="home"> Home </li>
-          <li> <img src="./images/notification.svg" alt="notification"> Notification </li>
-          <li> <img src="./images/message.svg" alt="message"> Messages </li>
+          <li class="active">
+            <span> Tweets </span>
+            <strong> 123 </strong>
+          </li>
+          <li>
+            <span> Followings </span>
+            <strong> 13 </strong>
+          </li>      
+          <li>
+            <span> Followers </span>
+            <strong> 2 </strong>
+          </li>      
+          <li>
+            <span> Favorites </span>
+            <strong> 1 </strong>
+          </li>      
+          <li>
+            <span> Lists </span>
+            <strong> 7 </strong>
+          </li>
+          <li>
+            <span> Moments </span>
+            <strong> 0 </strong>
+          </li>
         </ul>
-      </nav>
-      <img src="./images/logo.svg" alt="logo">
-      <div class="side">
-        <input type="text" placeholder="Seach on Twitter">
-        <img src="./images/avatar.png" alt="avatar">
-        <button> Tweet </button>
+        <div class="actions">
+          <button> Follow </button>
+          <img src="/twitter/images/more.svg" alt="more">
+        </div>
       </div>
     </div>
-  </header>
-  <div class="banner"> 
-    <h1>Twitter da Gislaine Jéssica </h1>
-  </div>
-  <div class="bar">
-    <div class="content">
-      <ul>
-        <li class="active">
-          <span> Tweets </span>
-          <strong> 123 </strong>
-        </li>
-        <li>
-          <span> Followings </span>
-          <strong> 13 </strong>
-        </li>      
-        <li>
-          <span> Followers </span>
-          <strong> 2 </strong>
-        </li>      
-        <li>
-          <span> Favorites </span>
-          <strong> 1 </strong>
-        </li>      
-        <li>
-          <span> Lists </span>
-          <strong> 7 </strong>
-        </li>
-        <li>
-          <span> Moments </span>
-          <strong> 0 </strong>
-        </li>
-      </ul>
-      <div class="actions">
-        <button> Follow </button>
-        <img src="/twitter/images/more.svg" alt="more">
-      </div>
+
+    <div class="wrapper-container content">
+      <aside class="profile">
+        <img class="avatar" src="/twitter/images/avatar.png" alt="avata">
+        <h1> Gislaine Jéssica </h1>
+        <span> @GislaineJessica </span>
+        <p> Algo sobre minha pessoa </p>
+
+        <ul class="list">
+          <li> <img src="/twitter/images/place.svg" alt="place"> Serra, Brasil</li>
+          <li> <img src="/twitter/images/url.svg" alt="url"> gis.com</li>
+          <li> <img src="/twitter/images/joined.svg" alt="joined"> Joined April 2018 </li>
+          <li> <img src="/twitter/images/born.svg" alt="born"> Born the 14th of April 1998</li>
+        </ul>
+        <div class="widgets followers">
+          <strong> <img src="/twitter//images/followers.svg" alt="followers"> 33 seguidores que você conhece </strong>
+          <ul>
+            <li> </li>
+            <li> </li>
+            <li> </li>
+            <li> </li>
+            <li> </li>
+            <li> </li>
+            <li> </li>
+            <li> </li>
+            <li> </li>
+            <li> </li>
+          </ul>
+        </div>
+        <div class="widgets images">
+          <strong> <img src="/twitter//images/images.svg" alt="images"> 266 fotos e videos </strong>
+          <ul>
+            <li> </li>
+            <li> </li>
+            <li> </li>
+            <li> </li>
+            <li> </li>
+            <li> </li>
+          </ul>
+        </div>
+
+      </aside>
+      <section class="timeline">
+        timeline
+      </section>
+      <aside class="widgets">
+        <div class="widget follow">
+          <div class="title">
+            <strong> Who to follow </strong>
+            <a href=""> Refresh </a>
+            <a href=""> View all </a>
+          </div>
+          <ul>
+            <li>
+              <div class="profile">
+                <img src="/twitter/images/avatar.png" alt="ava">
+                <div class="info">
+                  <strong>Tito <span>@tito</span></strong>
+                    <button> Follow </button>
+                </div>
+              </div>
+              <a href=""> X </a>
+            </li>
+
+            <li>
+                <div class="profile">
+                  <img src="/twitter/images/avatar.png" alt="ava">
+                  <div class="info">
+                    <strong>Tito <span>@tito</span></strong>
+                      <button> Follow </button>
+                  </div>
+                </div>
+                <a href=""></a>
+              </li>
+
+              <li>
+                  <div class="profile">
+                    <img src="/twitter/images/avatar.png" alt="ava">
+                    <div class="info">
+                      <strong>Tito <span>@tito</span></strong>
+                        <button> Follow </button>
+                    </div>
+                  </div>
+                  <a href=""></a>
+                </li>
+          </ul>
+
+        </div>
+        <div class="widget trends">
+
+        </div>
+      </aside>
     </div>
-  </div>
-
-  <div class="wrapper-container content">
-    <aside class="profile">
-      <img class="avatar" src="/twitter/images/avatar.png" alt="avata">
-      <h1> Gislaine Jéssica </h1>
-      <span> @GislaineJessica </span>
-      <p> Algo sobre minha pessoa </p>
-
-      <ul class="list">
-        <li> <img src="/twitter/images/place.svg" alt="place"> Serra, Brasil</li>
-        <li> <img src="/twitter/images/url.svg" alt="url"> gis.com</li>
-        <li> <img src="/twitter/images/joined.svg" alt="joined"> Joined April 2018 </li>
-        <li> <img src="/twitter/images/born.svg" alt="born"> Born the 14th of April 1998</li>
-      </ul>
-      <div class="widgets followers">
-        <strong> <img src="/twitter//images/followers.svg" alt="followers"> 33 seguidores que você conhece </strong>
-        <ul>
-          <li> </li>
-          <li> </li>
-          <li> </li>
-          <li> </li>
-          <li> </li>
-          <li> </li>
-          <li> </li>
-          <li> </li>
-          <li> </li>
-          <li> </li>
-        </ul>
-      </div>
-      <div class="widgets images">
-        <strong> <img src="/twitter//images/images.svg" alt="images"> 266 fotos e videos </strong>
-        <ul>
-          <li> </li>
-          <li> </li>
-          <li> </li>
-          <li> </li>
-          <li> </li>
-          <li> </li>
-        </ul>
-      </div>
-
-    </aside>
-    <section class="timeline">
-      timeline
-    </section>
-    <aside class="widgets">
-      widgets
-    </aside>
-  </div>
-
-</body>
+  </body>
 </html>
